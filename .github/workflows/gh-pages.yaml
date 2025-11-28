@@ -6,6 +6,9 @@ on:
       - main  # Set a branch to deploy
   pull_request:
 
+  schedule:
+    - cron: "0 8 * 12 *"
+
 permissions:
   contents: write
 
