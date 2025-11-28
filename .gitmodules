@@ -1,0 +1,3 @@
+[submodule "themes/hugo-shellish"]
+	path = themes/hugo-shellish
+	url = https://github.com/wolfeidau/hugo-shellish.git

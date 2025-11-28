@@ -1,0 +1,73 @@
+baseURL = "https://rpede.github.io/xmas-bashing"
+languageCode = "en-us"
+title = "Xmas Bashing"
+theme = "hugo-shellish"
+
+[pagination]
+  pagerSize = 10
+  path = "page"
+
+[params]
+  # Site metadata
+  author = "LUG Esbjerg"
+  description = "A Christmas calendar focusing on bash scripting"
+  favicon = "/favicon.ico"
+  
+  # Color theme
+  backgroundColor = "#0d1117"
+  textColor = "#c9d1d9"
+  accentColor = "#58a6ff"
+  
+  # Navigation
+  showBreadcrumbs = true
+  showNotes = false
+  
+  # Social links
+  [params.social]
+    github = ""
+    twitter = ""
+    linkedin = ""
+    rss = true
+
+[menu]
+  [[menu.main]]
+    name = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "blog"
+    url = "/blog"
+    weight = 2
+  # [[menu.main]]
+  #   name = "notes"
+  #   url = "/notes"
+  #   weight = 3
+  # [[menu.main]]
+  #   name = "projects"
+  #   url = "/projects"
+  #   weight = 4
+
+[markup.highlight]
+  style = "nord"
+  lineNos = false
+
+[markup.goldmark.renderer]
+  unsafe = true
+  autoHeadingID = true
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "keywords"
+    weight = 80
+
+  [[related.indices]]
+    name = "date"
+    weight = 10
