@@ -19,7 +19,7 @@
             <li><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span></li>
             {{- end }}
         </ul>
-        <p><a href="/blog">view all →</a></p>
+      <p><a href="{{ ref . "blog" }}">view all →</a></p>
     </section>
 
     {{- if $hasNotes }}
