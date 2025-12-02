@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/blog/</link><description>Recent content in Blogs on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>The whole Shebang</title><link>https://rpede.github.io/xmas-bashing/blog/01/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/01/</guid><description>&lt;h1 id="the-whole-shebang"&gt;The whole Shebang&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/blog/</link><description>Recent content in Blogs on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 02 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Variable $</title><link>https://rpede.github.io/xmas-bashing/blog/02/</link><pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/02/</guid><description>&lt;p&gt;Just like most other programming or scripting languages, Bash supports
+variables.
+A variable is simply a name given to a piece of data.
+We can use the name to refer to the data.
+The value of a variable name can be changed, which is why it&amp;rsquo;s called
+&lt;em&gt;variable&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Try it out in your terminal:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;name&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; $name
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;name&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;Alice&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; $name
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Notice that the second &lt;code&gt;echo&lt;/code&gt; outputs something else even tho the line is
+exactly the same.
+We use &lt;code&gt;$name&lt;/code&gt; (with &lt;code&gt;$&lt;/code&gt;) to refer to the variable.
+Otherwise we would just get the text &amp;ldquo;name&amp;rdquo;.&lt;/p&gt;</description></item><item><title>The whole Shebang</title><link>https://rpede.github.io/xmas-bashing/blog/01/</link><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/01/</guid><description>&lt;h1 id="the-whole-shebang"&gt;The whole Shebang&lt;/h1&gt;
 &lt;p&gt;You might have noticed that many scripts begins with lines like these:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/sh
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;#!/bin/bash&lt;/span&gt;
