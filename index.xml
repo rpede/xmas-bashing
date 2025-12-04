@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 03 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>Having an argument</title><link>https://rpede.github.io/xmas-bashing/blog/03/</link><pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/03/</guid><description>&lt;p&gt;We can pass arguments to scripts.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>Something if-fi</title><link>https://rpede.github.io/xmas-bashing/blog/04/</link><pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/04/</guid><description>&lt;p&gt;We often need ways to branch the execution in our scripts.
+Do one thing or another based on a condition.
+A simple way to to this is with the if-then syntax.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;if [ condition ]; then
+ # execute something
+fi
+# continue here
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Read as: if condition is met then execute something.&lt;/p&gt;
+&lt;p&gt;Maybe we want to check that certain conditions are met before executing the
+command.
+Say we have a script that requires two arguments.
+We can bail out with a helpful error message if not exactly two are given using an &lt;code&gt;if&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Having an argument</title><link>https://rpede.github.io/xmas-bashing/blog/03/</link><pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/03/</guid><description>&lt;p&gt;We can pass arguments to scripts.
 Create a file name &lt;code&gt;hello.sh&lt;/code&gt; in your favorite text-editor (beginners often use
 &lt;a href="https://www.youtube.com/watch?v=g2PU--TctAM"&gt;nano&lt;/a&gt;).&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/sh

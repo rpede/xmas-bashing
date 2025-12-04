@@ -1,0 +1,50 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>Something if-fi | Xmas Bashing</title><meta name=description content="A Christmas calendar focusing on bash scripting"><meta name=author content="LUG Esbjerg"><meta property="og:type" content="article"><meta property="og:url" content="https://rpede.github.io/xmas-bashing/blog/04/"><meta property="og:title" content="Something if-fi"><meta property="og:description" content="A Christmas calendar focusing on bash scripting"><meta property="twitter:card" content="summary"><meta property="twitter:url" content="https://rpede.github.io/xmas-bashing/blog/04/"><meta property="twitter:title" content="Something if-fi"><meta property="twitter:description" content="A Christmas calendar focusing on bash scripting"><link rel=canonical href=https://rpede.github.io/xmas-bashing/blog/04/><link rel=alternate type=application/rss+xml href=/index.xml title="Xmas Bashing"><link rel=icon type=image/x-icon href=/favicon.ico><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","headline":"Something if-fi","url":"https:\/\/rpede.github.io\/xmas-bashing\/blog\/04\/","datePublished":"2025-12-04T00:00:00Z","dateModified":"2025-12-04T00:00:00Z","description":"A Christmas calendar focusing on bash scripting","author":{"@type":"Person","name":"LUG Esbjerg"}}</script><link rel=preload href=/xmas-bashing/fonts/JetBrainsMono-Regular.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/xmas-bashing/css/style.min.5ce1f93f36c4e8e221dd4c3f3f5b98ac9dabd9f6d2d163031124a31b637cfa24.css integrity="sha256-XOH5PzbE6OIh3Uw/P1uYrJ2r2fbS0WMDESSjG2N8+iQ="><script>(function(){const e=localStorage.getItem("theme")||"light",t=window.matchMedia("(prefers-color-scheme: dark)").matches,n=e!=="light"&&(e==="dark"||t)?"dark":"light";n==="dark"&&document.documentElement.setAttribute("data-theme","dark")})()</script></head><body><div class=container><header class=site-header><div class=header-content><a href=/ class=site-title>Xmas Bashing</a><div class=header-right><nav class=site-nav><ul><li><a href=/xmas-bashing/ class=nav-link>home</a></li><li><a href=/xmas-bashing/blog class=nav-link>blog</a></li></ul></nav><button id=theme-toggle class=theme-toggle aria-label="Toggle dark mode" title="Toggle theme">
+<svg class="theme-icon moon-icon" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 01-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 009 9c.239.0.254.018.488.0A9.004 9.004.0 0112 21z"/></svg>
+<svg class="theme-icon sun-icon hidden" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5V3m0 18v-2M7.05 7.05 5.636 5.636m12.728 12.728L16.95 16.95M5 12H3m18 0h-2M7.05 16.95l-1.414 1.414M18.364 5.636 16.95 7.05M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></button></div></div></header><main class=content><nav class=breadcrumb aria-label=breadcrumb><ul><li><a href=/>home</a></li><li><span>Something if-fi</span></li></ul></nav><article class=post><header class=post-header><h1 class=post-title>Something if-fi</h1><time class=post-date datetime=2025-12-04T00:00:00Z>Dec 4, 2025</time></header><div class=post-content><p>We often need ways to branch the execution in our scripts.
+Do one thing or another based on a condition.
+A simple way to to this is with the if-then syntax.</p><pre tabindex=0><code>if [ condition ]; then
+  # execute something
+fi
+# continue here
+</code></pre><p>Read as: if condition is met then execute something.</p><p>Maybe we want to check that certain conditions are met before executing the
+command.
+Say we have a script that requires two arguments.
+We can bail out with a helpful error message if not exactly two are given using an <code>if</code>.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#5e81ac;font-style:italic>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#5e81ac;font-style:italic></span><span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#81a1c1>[[</span> <span style=color:#a3be8c>&#34;</span>$#<span style=color:#a3be8c>&#34;</span> -ne <span style=color:#b48ead>2</span> <span style=color:#81a1c1>]]</span><span style=color:#eceff4>;</span> <span style=color:#81a1c1;font-weight:700>then</span>
+</span></span><span style=display:flex><span>    <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;Usage: </span>$0<span style=color:#a3be8c> &lt;username&gt; &lt;password&gt;&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#81a1c1>exit</span> <span style=color:#b48ead>1</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>fi</span>
+</span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic># Continue with login</span>
+</span></span></code></pre></div><p>The script will exit with a helpful error message if not exactly two arguments
+are given.
+The <code>-ne</code> part means not equal.
+There is also <code>-eq</code> for equal, <code>-gt</code> for greater-than and <code>-lt</code> for less-than.
+You can compare strings with <code>==</code> for equal and <code>!=</code> for not-equal.
+You can even make conditions based on <a href=https://en.wikipedia.org/wiki/Regular_expression>regular
+expressions</a> with <code>=~</code>.
+See
+<a href=https://www.gnu.org/software/bash/manual/html_node/Conditional-Constructs.html#index-_005b_005b>here</a>
+for more details.</p><blockquote><p>[!CAUTION]
+Don&rsquo;t write or use scripts that accepts a password as argument like above.
+This is because the password will then end up in your command history
+(<code>.bash_history</code>).</p></blockquote><p>A safe way of accepting password input is:</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#81a1c1>read</span> -s -p <span style=color:#a3be8c>&#34;Password: &#34;</span> password
+</span></span></code></pre></div><p>Then access it through the <code>$password</code> variable.</p><p><strong>If..elif..Else statement</strong></p><p>We can use <code>elif</code> to specify alternative conditions.
+And <code>else</code> for commands to run if neither conditions match.
+Here is an example:</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#5e81ac;font-style:italic>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#5e81ac;font-style:italic></span><span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#81a1c1>[[</span> <span style=color:#a3be8c>&#34;</span>$#<span style=color:#a3be8c>&#34;</span> -eq <span style=color:#b48ead>1</span> <span style=color:#81a1c1>]]</span><span style=color:#eceff4>;</span> <span style=color:#81a1c1;font-weight:700>then</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>read</span> -s -p <span style=color:#a3be8c>&#34;Password: &#34;</span> password
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>elif</span> <span style=color:#81a1c1>[[</span> <span style=color:#a3be8c>&#34;</span>$#<span style=color:#a3be8c>&#34;</span> -eq <span style=color:#b48ead>2</span> <span style=color:#81a1c1>]]</span><span style=color:#eceff4>;</span> <span style=color:#81a1c1;font-weight:700>then</span>
+</span></span><span style=display:flex><span>  username<span style=color:#81a1c1>=</span>$1
+</span></span><span style=display:flex><span>  password<span style=color:#81a1c1>=</span>$2
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>else</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;Usage: </span>$0<span style=color:#a3be8c> &lt;username&gt;&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>exit</span> <span style=color:#b48ead>1</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>fi</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;Login...&#34;</span>
+</span></span></code></pre></div><p><strong>Exit codes</strong></p><p>Also, and interesting thing to note with <code>exit 1</code> is that we exit with a
+exit-code of <code>1</code>.
+Exit codes are used for error handling.
+All exit-codes except <code>0</code> is considered an error.
+If you just type <code>[[ 1 -ne 1 ]]</code> directly in bash, you get an exit code of <code>1</code>,
+signaling that the conditions isn&rsquo;t true.</p><p>You can check the last exit code with:</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#81a1c1>echo</span> $?
+</span></span></code></pre></div><h1 id=challenge>Challenge</h1><p>Create a script that checks if it is Christmas-eve.</p><p><strong>Hint:</strong> Run &ldquo;<code>man date</code>&rdquo; in your terminal.</p></div></article></main><footer class=site-footer><div class=footer-content><div class=social-links><a href=/index.xml title=RSS rel="noopener noreferrer">rss</a></div><p class=footer-text>© 2025 LUG Esbjerg</p></div></footer></div><script src=/xmas-bashing/js/theme.min.676e5af9ed08ae050dc2a0576a038a9cf41cf92fb5f33872ef1073e9c0376404.js integrity="sha256-Z25a+e0IrgUNwqBXagOKnPQc+S+18zhy7xBz6cA3ZAQ="></script></body></html>
