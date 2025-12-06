@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 05 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>Loop de loop</title><link>https://rpede.github.io/xmas-bashing/blog/05/</link><pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/05/</guid><description>&lt;p&gt;Sometimes you have scripts with some repetition.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>A curious case</title><link>https://rpede.github.io/xmas-bashing/blog/06/</link><pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/06/</guid><description>&lt;p&gt;A &lt;code&gt;case&lt;/code&gt; statement is another form of branching.
+It is a great alternative to &lt;code&gt;if..elif&lt;/code&gt; when you have many conditions, such as
+if you want to specify sub-commands.
+You specify an expression (typically a variable) to match on, then one or more
+patterns.
+The statements for a pattern is executed if it matches the expression.
+A pattern and associated statements is called a clause and must be terminated
+with &lt;code&gt;;;&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Loop de loop</title><link>https://rpede.github.io/xmas-bashing/blog/05/</link><pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/05/</guid><description>&lt;p&gt;Sometimes you have scripts with some repetition.
 To avoid copy-pasting, you can write loops.
 Bash has a couple of different ways of writing loops.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;for-loop&lt;/strong&gt;&lt;/p&gt;
