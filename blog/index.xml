@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/blog/</link><description>Recent content in Blogs on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>A curious case</title><link>https://rpede.github.io/xmas-bashing/blog/06/</link><pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/06/</guid><description>&lt;p&gt;A &lt;code&gt;case&lt;/code&gt; statement is another form of branching.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/blog/</link><description>Recent content in Blogs on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 07 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Fun with funky functions</title><link>https://rpede.github.io/xmas-bashing/blog/07/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/07/</guid><description>&lt;p&gt;A function is a set of commands with a name.
+They are useful when the same series of commands needs to run multiple places
+in your script.
+And can also be used to provide a better structure for your scripts.&lt;/p&gt;
+&lt;p&gt;There are two ways to specify a function:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;function function_name() {
+ commands
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Or&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;function_name() {
+ commands
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Arguments works the same way they do for scripts see &lt;a href="02"&gt;Dec 2&lt;/a&gt; for details.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;&lt;/span&gt;greeting&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;function&lt;/span&gt; hello&lt;span style="color:#81a1c1"&gt;()&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;local&lt;/span&gt; name&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;$1
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$greeting&lt;span style="color:#a3be8c"&gt; &lt;/span&gt;$name&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hello Bob
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Variables are global by default.
+To declare a variable that only exists inside the function you can use the
+&lt;code&gt;local&lt;/code&gt; keyword.&lt;/p&gt;</description></item><item><title>A curious case</title><link>https://rpede.github.io/xmas-bashing/blog/06/</link><pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/06/</guid><description>&lt;p&gt;A &lt;code&gt;case&lt;/code&gt; statement is another form of branching.
 It is a great alternative to &lt;code&gt;if..elif&lt;/code&gt; when you have many conditions, such as
 if you want to specify sub-commands.
 You specify an expression (typically a variable) to match on, then one or more
