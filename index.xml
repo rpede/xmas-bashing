@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 07 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>Fun with funky functions</title><link>https://rpede.github.io/xmas-bashing/blog/07/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/07/</guid><description>&lt;p&gt;A function is a set of commands with a name.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>How to be a plumber</title><link>https://rpede.github.io/xmas-bashing/blog/08/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/08/</guid><description>&lt;h2 id="background"&gt;Background&lt;/h2&gt;
+&lt;p&gt;Streams are a fundamental part of Linux command-line experience.
+The concept is inherited from &lt;a href="https://en.wikipedia.org/wiki/Unix"&gt;Unix&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Following is the &amp;ldquo;The Unix philosophy&amp;rdquo; by Peter H. Salus:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Write programs that do one thing and do it well.&lt;/li&gt;
+&lt;li&gt;Write programs to work together.&lt;/li&gt;
+&lt;li&gt;Write programs to handle text streams, because that is a universal interface.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Let me provide some context.&lt;/p&gt;
+&lt;p&gt;Back when Unix was invented, computers had a minuscule amount of memory
+compared to today.
+A big machine had memory in the order of kilo-bytes.
+That put some serious limitation on how big a single program could be.&lt;/p&gt;</description></item><item><title>Fun with funky functions</title><link>https://rpede.github.io/xmas-bashing/blog/07/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/07/</guid><description>&lt;p&gt;A function is a set of commands with a name.
 They are useful when the same series of commands needs to run multiple places
 in your script.
 And can also be used to provide a better structure for your scripts.&lt;/p&gt;
