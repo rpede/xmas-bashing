@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>How to be a plumber</title><link>https://rpede.github.io/xmas-bashing/blog/08/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/08/</guid><description>&lt;h2 id="background"&gt;Background&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>How to use the toilet</title><link>https://rpede.github.io/xmas-bashing/blog/09/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/09/</guid><description>&lt;p&gt;No, it is not about the &lt;code&gt;wc&lt;/code&gt; command.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/cacalabs/toilet"&gt;toilet&lt;/a&gt; is a CLI tool that turns text into
+&lt;a href="https://en.wikipedia.org/wiki/ASCII_art"&gt;ASCII art&lt;/a&gt;.
+It simply means using text characters to draw graphics.
+Why?
+Because it is fun.&lt;/p&gt;
+&lt;p&gt;You could use &lt;code&gt;toilet&lt;/code&gt; to add an ASCII art banner to fancy up your script.&lt;/p&gt;
+&lt;h2 id="install"&gt;Install&lt;/h2&gt;
+&lt;p&gt;Arch Linux:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo pacman -S toilet
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ubuntu/Debian:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install toilet
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If &lt;code&gt;toilet&lt;/code&gt; isn&amp;rsquo;t found in your package manager, then you could try with &lt;a href="https://www.figlet.org/"&gt;figlet&lt;/a&gt; instead.&lt;/p&gt;</description></item><item><title>How to be a plumber</title><link>https://rpede.github.io/xmas-bashing/blog/08/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/08/</guid><description>&lt;h2 id="background"&gt;Background&lt;/h2&gt;
 &lt;p&gt;Streams are a fundamental part of Linux command-line experience.
 The concept is inherited from &lt;a href="https://en.wikipedia.org/wiki/Unix"&gt;Unix&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Following is the &amp;ldquo;The Unix philosophy&amp;rdquo; by Peter H. Salus:&lt;/p&gt;
