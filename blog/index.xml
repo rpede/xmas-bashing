@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/blog/</link><description>Recent content in Blogs on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>How to use the toilet</title><link>https://rpede.github.io/xmas-bashing/blog/09/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/09/</guid><description>&lt;p&gt;No, it is not about the &lt;code&gt;wc&lt;/code&gt; command.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/blog/</link><description>Recent content in Blogs on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Trippy colors</title><link>https://rpede.github.io/xmas-bashing/blog/10/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/10/</guid><description>&lt;p&gt;You&amp;rsquo;ve probably notices that some commands can output colorful text in the
+terminal.
+Here is how to do it yourself.&lt;/p&gt;
+&lt;p&gt;Here is a teaser.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; -e &lt;span style="color:#a3be8c"&gt;&amp;#34;\e[32mHello World\e[0m&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="background"&gt;Background&lt;/h2&gt;
+&lt;p&gt;It gets a bit technical.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;-e&lt;/code&gt; flag makes &lt;code&gt;echo&lt;/code&gt; interpret backslash escapes.
+With it we can type in &lt;code&gt;\&lt;/code&gt; followed by a character code to output
+none-printable characters.&lt;/p&gt;
+&lt;p&gt;You see, terminals are based on the ASCII standard for encoding character.
+Each symbol shown on the screen needs to be encoded in binary somehow.
+ASCII is just a way to encode those.&lt;/p&gt;</description></item><item><title>How to use the toilet</title><link>https://rpede.github.io/xmas-bashing/blog/09/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/09/</guid><description>&lt;p&gt;No, it is not about the &lt;code&gt;wc&lt;/code&gt; command.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/cacalabs/toilet"&gt;toilet&lt;/a&gt; is a CLI tool that turns text into
 &lt;a href="https://en.wikipedia.org/wiki/ASCII_art"&gt;ASCII art&lt;/a&gt;.
 It simply means using text characters to draw graphics.
