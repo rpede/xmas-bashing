@@ -1,0 +1,88 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>Select from the menu | Xmas Bashing</title><meta name=description content="A Christmas calendar focusing on bash scripting"><meta name=author content="LUG Esbjerg"><meta property="og:type" content="article"><meta property="og:url" content="https://rpede.github.io/xmas-bashing/blog/11/"><meta property="og:title" content="Select from the menu"><meta property="og:description" content="A Christmas calendar focusing on bash scripting"><meta property="twitter:card" content="summary"><meta property="twitter:url" content="https://rpede.github.io/xmas-bashing/blog/11/"><meta property="twitter:title" content="Select from the menu"><meta property="twitter:description" content="A Christmas calendar focusing on bash scripting"><link rel=canonical href=https://rpede.github.io/xmas-bashing/blog/11/><link rel=alternate type=application/rss+xml href=/index.xml title="Xmas Bashing"><link rel=icon type=image/x-icon href=/favicon.ico><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","headline":"Select from the menu","url":"https:\/\/rpede.github.io\/xmas-bashing\/blog\/11\/","datePublished":"2025-12-11T00:00:00Z","dateModified":"2025-12-11T00:00:00Z","description":"A Christmas calendar focusing on bash scripting","author":{"@type":"Person","name":"LUG Esbjerg"}}</script><link rel=preload href=/xmas-bashing/fonts/JetBrainsMono-Regular.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/xmas-bashing/css/style.min.5ce1f93f36c4e8e221dd4c3f3f5b98ac9dabd9f6d2d163031124a31b637cfa24.css integrity="sha256-XOH5PzbE6OIh3Uw/P1uYrJ2r2fbS0WMDESSjG2N8+iQ="><script>(function(){const e=localStorage.getItem("theme")||"light",t=window.matchMedia("(prefers-color-scheme: dark)").matches,n=e!=="light"&&(e==="dark"||t)?"dark":"light";n==="dark"&&document.documentElement.setAttribute("data-theme","dark")})()</script></head><body><div class=container><header class=site-header><div class=header-content><a href=/ class=site-title>Xmas Bashing</a><div class=header-right><nav class=site-nav><ul><li><a href=/xmas-bashing/ class=nav-link>home</a></li><li><a href=/xmas-bashing/blog class=nav-link>blog</a></li></ul></nav><button id=theme-toggle class=theme-toggle aria-label="Toggle dark mode" title="Toggle theme">
+<svg class="theme-icon moon-icon" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 01-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 009 9c.239.0.254.018.488.0A9.004 9.004.0 0112 21z"/></svg>
+<svg class="theme-icon sun-icon hidden" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5V3m0 18v-2M7.05 7.05 5.636 5.636m12.728 12.728L16.95 16.95M5 12H3m18 0h-2M7.05 16.95l-1.414 1.414M18.364 5.636 16.95 7.05M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></button></div></div></header><main class=content><nav class=breadcrumb aria-label=breadcrumb><ul><li><a href=/>home</a></li><li><span>Select from the menu</span></li></ul></nav><article class=post><header class=post-header><h1 class=post-title>Select from the menu</h1><time class=post-date datetime=2025-12-11T00:00:00Z>Dec 11, 2025</time></header><div class=post-content><p>When creating interactive scripts, it is commonly needed to provide a way for
+users to select an option from a menu.
+It can be accomplished with the <code>read</code> command in a loop.
+But there is a smarter way.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#5e81ac;font-style:italic>#!/usr/bin/env bash
+</span></span></span><span style=display:flex><span><span style=color:#5e81ac;font-style:italic></span>
+</span></span><span style=display:flex><span>PS3<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#34;What is your favorite programming language? &#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>select</span> language in Bash Java C# Python<span style=color:#eceff4>;</span> <span style=color:#81a1c1;font-weight:700>do</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;You choose </span>$language<span style=color:#a3be8c>&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>done</span>
+</span></span></code></pre></div><p>Try it out!</p><p>The <code>PS3</code> variable is used to set the prompt for the <code>select</code> statement.</p><p>It keeps prompting forever.
+We can break out with the <code>break</code> keyword.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#5e81ac;font-style:italic>#!/usr/bin/env bash
+</span></span></span><span style=display:flex><span><span style=color:#5e81ac;font-style:italic></span>
+</span></span><span style=display:flex><span>PS3<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#34;What is your favorite programming language? &#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>select</span> language in Bash Java C# Python<span style=color:#eceff4>;</span> <span style=color:#81a1c1;font-weight:700>do</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;You choose </span>$language<span style=color:#a3be8c>&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>break</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>done</span>
+</span></span></code></pre></div><p>If you want different actions to take place depending on the selected option
+then you can combine it with a <code>case</code> statement.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#5e81ac;font-style:italic>#!/usr/bin/env bash
+</span></span></span><span style=display:flex><span><span style=color:#5e81ac;font-style:italic></span>
+</span></span><span style=display:flex><span>PS3<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#34;What is your favorite programming language? &#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>select</span> language in Bash Java C# Python<span style=color:#eceff4>;</span> <span style=color:#81a1c1;font-weight:700>do</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1;font-weight:700>case</span> $language in
+</span></span><span style=display:flex><span>  <span style=color:#a3be8c>&#34;Bash&#34;</span><span style=color:#81a1c1>)</span>
+</span></span><span style=display:flex><span>    <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;</span>$language<span style=color:#a3be8c> and crash :(){ :|:&amp; };:&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#eceff4>;;</span>
+</span></span><span style=display:flex><span>  <span style=color:#a3be8c>&#34;Java&#34;</span><span style=color:#81a1c1>)</span>
+</span></span><span style=display:flex><span>    <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;You like strong coffe, because you are all about that </span>$language<span style=color:#a3be8c> GUI&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#eceff4>;;</span>
+</span></span><span style=display:flex><span>  <span style=color:#a3be8c>&#34;C#&#34;</span><span style=color:#81a1c1>)</span>
+</span></span><span style=display:flex><span>    <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;You wear glasses so you can </span>$language<span style=color:#a3be8c>&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#eceff4>;;</span>
+</span></span><span style=display:flex><span>  <span style=color:#a3be8c>&#34;Python&#34;</span><span style=color:#81a1c1>)</span>
+</span></span><span style=display:flex><span>    <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;</span>$language<span style=color:#a3be8c> because you can&#39;t keep anything private&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#eceff4>;;</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1;font-weight:700>esac</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>done</span>
+</span></span></code></pre></div><p>Or if you only want to prompt once.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#5e81ac;font-style:italic>#!/usr/bin/env bash
+</span></span></span><span style=display:flex><span><span style=color:#5e81ac;font-style:italic></span>
+</span></span><span style=display:flex><span>PS3<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#34;What is your favorite programming language? &#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>select</span> language in Bash Java C# Python quit<span style=color:#eceff4>;</span> <span style=color:#81a1c1;font-weight:700>do</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>break</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>done</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>case</span> $language in
+</span></span><span style=display:flex><span><span style=color:#a3be8c>&#34;Bash&#34;</span><span style=color:#81a1c1>)</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;</span>$language<span style=color:#a3be8c> and crash :(){ :|:&amp; };:&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#eceff4>;;</span>
+</span></span><span style=display:flex><span><span style=color:#a3be8c>&#34;Java&#34;</span><span style=color:#81a1c1>)</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;You like strong coffe, because you are all about that </span>$language<span style=color:#a3be8c> GUI&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#eceff4>;;</span>
+</span></span><span style=display:flex><span><span style=color:#a3be8c>&#34;C#&#34;</span><span style=color:#81a1c1>)</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;You wear glasses so you can </span>$language<span style=color:#a3be8c>&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#eceff4>;;</span>
+</span></span><span style=display:flex><span><span style=color:#a3be8c>&#34;Python&#34;</span><span style=color:#81a1c1>)</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;</span>$language<span style=color:#a3be8c> because you can&#39;t keep anything private&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#eceff4>;;</span>
+</span></span><span style=display:flex><span><span style=color:#a3be8c>&#34;quit&#34;</span><span style=color:#81a1c1>)</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;Done.&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>break</span>
+</span></span><span style=display:flex><span>  <span style=color:#eceff4>;;</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>esac</span>
+</span></span></code></pre></div><p>You can an array for options.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#5e81ac;font-style:italic>#!/usr/bin/env bash
+</span></span></span><span style=display:flex><span><span style=color:#5e81ac;font-style:italic></span>
+</span></span><span style=display:flex><span>options<span style=color:#81a1c1>=(</span>Bash Java C# Python<span style=color:#81a1c1>)</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>select</span> option in <span style=color:#a3be8c>&#34;</span><span style=color:#a3be8c>${</span>options<span style=color:#eceff4>[@]</span><span style=color:#a3be8c>}</span><span style=color:#a3be8c>&#34;</span><span style=color:#eceff4>;</span> <span style=color:#81a1c1;font-weight:700>do</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;You selected </span>$option<span style=color:#a3be8c>&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>done</span>
+</span></span></code></pre></div><p>And you can use the output from a command.</p><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#5e81ac;font-style:italic>#!/usr/bin/env bash
+</span></span></span><span style=display:flex><span><span style=color:#5e81ac;font-style:italic></span>
+</span></span><span style=display:flex><span>PS3<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#34;Please select a folder in your home directory: &#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>IFS<span style=color:#81a1c1>=</span><span style=color:#a3be8c>$&#39;\n&#39;</span>
+</span></span><span style=display:flex><span>options<span style=color:#81a1c1>=(</span><span style=color:#81a1c1;font-weight:700>$(</span>ls -1 ~<span style=color:#81a1c1;font-weight:700>)</span><span style=color:#81a1c1>)</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>select</span> option in <span style=color:#a3be8c>&#34;</span><span style=color:#a3be8c>${</span>options<span style=color:#eceff4>[@]</span><span style=color:#a3be8c>}</span><span style=color:#a3be8c>&#34;</span><span style=color:#eceff4>;</span> <span style=color:#81a1c1;font-weight:700>do</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1>echo</span> <span style=color:#a3be8c>&#34;You selected </span>$option<span style=color:#a3be8c>&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>done</span>
+</span></span></code></pre></div><p>It uses <code>-1</code> flag for <code>ls</code> command to output one item per line.</p><p>By default bash split items on any whitespace character (space, tab, newline).
+It can be changed by setting the <code>IFS</code> (Internal Field Separator) variable.
+We are setting it to newline, because we got one item per line.</p></div></article></main><footer class=site-footer><div class=footer-content><div class=social-links><a href=/index.xml title=RSS rel="noopener noreferrer">rss</a></div><p class=footer-text>© 2025 LUG Esbjerg</p></div></footer></div><script src=/xmas-bashing/js/theme.min.676e5af9ed08ae050dc2a0576a038a9cf41cf92fb5f33872ef1073e9c0376404.js integrity="sha256-Z25a+e0IrgUNwqBXagOKnPQc+S+18zhy7xBz6cA3ZAQ="></script></body></html>
