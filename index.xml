@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 11 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>Select from the menu</title><link>https://rpede.github.io/xmas-bashing/blog/11/</link><pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/11/</guid><description>&lt;p&gt;When creating interactive scripts, it is commonly needed to provide a way for
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>Lost and find</title><link>https://rpede.github.io/xmas-bashing/blog/12/</link><pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/12/</guid><description>&lt;p&gt;Looking for a file or directory?
+The &lt;code&gt;find&lt;/code&gt; command is what you need.&lt;/p&gt;
+&lt;p&gt;This is one of those rare occasions where a command doesn&amp;rsquo;t have a slightly
+cryptic name.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;find&lt;/code&gt; can be used to find files or directories.&lt;/p&gt;
+&lt;p&gt;Say you want to find all PDF documents in your home directory.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;find ~ -name &lt;span style="color:#a3be8c"&gt;&amp;#39;*.pdf&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;~&lt;/code&gt; (tilde) is a shortcut for your home directory.
+We tell it to search for a name with &lt;code&gt;-name&lt;/code&gt; matching pattern the pattern
+enclosed in single-quotes.
+The &lt;code&gt;*&lt;/code&gt; matches any number of characters, so effectively we are matching
+anything that ends with &amp;lsquo;.pdf&amp;rsquo;.&lt;/p&gt;</description></item><item><title>Select from the menu</title><link>https://rpede.github.io/xmas-bashing/blog/11/</link><pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/11/</guid><description>&lt;p&gt;When creating interactive scripts, it is commonly needed to provide a way for
 users to select an option from a menu.
 It can be accomplished with the &lt;code&gt;read&lt;/code&gt; command in a loop.
 But there is a smarter way.&lt;/p&gt;
