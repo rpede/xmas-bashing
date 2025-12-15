@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>Keep your zenity</title><link>https://rpede.github.io/xmas-bashing/blog/14/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/14/</guid><description>&lt;p&gt;Zenity is much like the &lt;code&gt;dialog&lt;/code&gt; package from the day before, except it shows
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>eXtended ARGumentS</title><link>https://rpede.github.io/xmas-bashing/blog/15/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/15/</guid><description>&lt;p&gt;Previously on &lt;a href="12"&gt;Dec 12&lt;/a&gt; I showed how you can execute a command on files
+matching a pattern with &lt;code&gt;find -exec&lt;/code&gt;.
+However, it has some limitations.
+First it obviously only works for &lt;code&gt;find&lt;/code&gt;.
+Second the &lt;code&gt;exec&lt;/code&gt; doesn&amp;rsquo;t have a shell, meaning you can&amp;rsquo;t use it with many of
+the cool shell tricks you are learning about in this series of post.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;xarg&lt;/code&gt; command (short for &amp;ldquo;extended arguments&amp;rdquo;) doesn&amp;rsquo;t have these
+limitations.
+It works for any other command.&lt;/p&gt;</description></item><item><title>Keep your zenity</title><link>https://rpede.github.io/xmas-bashing/blog/14/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/14/</guid><description>&lt;p&gt;Zenity is much like the &lt;code&gt;dialog&lt;/code&gt; package from the day before, except it shows
 dialog as GUI.
 &lt;a href="https://github.com/Winetricks/winetricks"&gt;WineTricks&lt;/a&gt; is an example of a
 package that uses zenity.&lt;/p&gt;
