@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>eXtended ARGumentS</title><link>https://rpede.github.io/xmas-bashing/blog/15/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/15/</guid><description>&lt;p&gt;Previously on &lt;a href="12"&gt;Dec 12&lt;/a&gt; I showed how you can execute a command on files
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>global, regular expression, print</title><link>https://rpede.github.io/xmas-bashing/blog/16/</link><pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/16/</guid><description>&lt;p&gt;The &lt;code&gt;grep&lt;/code&gt; command is one of those fundamental commands.
+We&amp;rsquo;ve already gotten a sneak peek of &lt;code&gt;grep&lt;/code&gt; on &lt;a href="8"&gt;Dec 8&lt;/a&gt;, as it is hard to
+come up with good examples for pipes without it.&lt;/p&gt;
+&lt;p&gt;Grep is short for &amp;ldquo;global, regular expression, print&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Where the &lt;code&gt;find&lt;/code&gt; command allows you to search for files, then &lt;code&gt;grep&lt;/code&gt; searches
+in text.&lt;/p&gt;
+&lt;p&gt;You might have heard about &lt;a href="https://en.wikipedia.org/wiki/Regular_expression"&gt;regular
+expression&lt;/a&gt; if you&amp;rsquo;ve done
+programming in another language.
+Because most languages supports it in some form.&lt;/p&gt;</description></item><item><title>eXtended ARGumentS</title><link>https://rpede.github.io/xmas-bashing/blog/15/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/15/</guid><description>&lt;p&gt;Previously on &lt;a href="12"&gt;Dec 12&lt;/a&gt; I showed how you can execute a command on files
 matching a pattern with &lt;code&gt;find -exec&lt;/code&gt;.
 However, it has some limitations.
 First it obviously only works for &lt;code&gt;find&lt;/code&gt;.
