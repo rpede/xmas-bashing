@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/blog/</link><description>Recent content in Blogs on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 17 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Lost in tr</title><link>https://rpede.github.io/xmas-bashing/blog/17/</link><pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/17/</guid><description>&lt;p&gt;You get two in one today.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/blog/</link><description>Recent content in Blogs on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Ready, sed, go</title><link>https://rpede.github.io/xmas-bashing/blog/18/</link><pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/18/</guid><description>&lt;p&gt;The &lt;code&gt;sed&lt;/code&gt; (stream editor) command combines search and transform in one command.
+You can match patterns in text using
+&lt;a href="https://en.wikipedia.org/wiki/Regular_expression"&gt;RegEx&lt;/a&gt; like &lt;code&gt;grep&lt;/code&gt;.
+But instead of highlighting matches, it is used to transform matches.&lt;/p&gt;
+&lt;p&gt;Create a file for demonstration:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;cat &amp;gt; unix-philosophy.txt &amp;lt;&amp;lt; EOF
+Write programs that do one thing and do it well.
+Write programs to work together.
+Write programs to handle text streams, because that is a universal interface.
+EOF
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Use &lt;code&gt;sed&lt;/code&gt; to change the text.&lt;/p&gt;</description></item><item><title>Lost in tr</title><link>https://rpede.github.io/xmas-bashing/blog/17/</link><pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/17/</guid><description>&lt;p&gt;You get two in one today.&lt;/p&gt;
 &lt;h1 id="translate"&gt;Translate&lt;/h1&gt;
 &lt;p&gt;The &lt;code&gt;tr&lt;/code&gt; command (short for translate) is used to do simple transformations or
 clean up of text before piping into the next command.&lt;/p&gt;
