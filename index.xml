@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>Ready, sed, go</title><link>https://rpede.github.io/xmas-bashing/blog/18/</link><pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/18/</guid><description>&lt;p&gt;The &lt;code&gt;sed&lt;/code&gt; (stream editor) command combines search and transform in one command.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>AWK</title><link>https://rpede.github.io/xmas-bashing/blog/19/</link><pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/19/</guid><description>&lt;p&gt;I don&amp;rsquo;t have a pun title for this one.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;awk&lt;/code&gt; command is used to transform stream of text (like &lt;code&gt;sed&lt;/code&gt;).
+It is likely named after it&amp;rsquo;s creators Aho, Weinberger and Kerninghan.
+The command has its own scripting language called AWK.&lt;/p&gt;
+&lt;p&gt;An AWK program is a series of pattern command pairs.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;pattern { command }
+pattern { command }
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Patterns can be regular expressions (see a pattern here?).&lt;/p&gt;
+&lt;p&gt;A simple AWK program looks like this:&lt;/p&gt;</description></item><item><title>Ready, sed, go</title><link>https://rpede.github.io/xmas-bashing/blog/18/</link><pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/18/</guid><description>&lt;p&gt;The &lt;code&gt;sed&lt;/code&gt; (stream editor) command combines search and transform in one command.
 You can match patterns in text using
 &lt;a href="https://en.wikipedia.org/wiki/Regular_expression"&gt;RegEx&lt;/a&gt; like &lt;code&gt;grep&lt;/code&gt;.
 But instead of highlighting matches, it is used to transform matches.&lt;/p&gt;
