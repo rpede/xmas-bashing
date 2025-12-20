@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>AWK</title><link>https://rpede.github.io/xmas-bashing/blog/19/</link><pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/19/</guid><description>&lt;p&gt;I don&amp;rsquo;t have a pun title for this one.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 20 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>inotify, wait what?</title><link>https://rpede.github.io/xmas-bashing/blog/20/</link><pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/20/</guid><description>&lt;p&gt;Inotify is short for index node notify.
+An index node (short inode) is a filesystem object (files and folder) in
+Unix-style operating systems such as Linux.
+The terminology is a bit crazy.&lt;/p&gt;
+&lt;p&gt;Anyway, inotify is an API that allows programs to monitor for changes to files
+or folders.&lt;/p&gt;
+&lt;h2 id="install"&gt;Install&lt;/h2&gt;
+&lt;p&gt;To use it from the shell, we first need to install inotify-tools.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Debian&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install inotify-tools
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Arch Linux&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo pacman -S inotify-tools
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="usage"&gt;Usage&lt;/h2&gt;
+&lt;p&gt;A simple usage is to wait for changes to a file.&lt;/p&gt;</description></item><item><title>AWK</title><link>https://rpede.github.io/xmas-bashing/blog/19/</link><pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/19/</guid><description>&lt;p&gt;I don&amp;rsquo;t have a pun title for this one.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;awk&lt;/code&gt; command is used to transform stream of text (like &lt;code&gt;sed&lt;/code&gt;).
 It is likely named after it&amp;rsquo;s creators Aho, Weinberger and Kerninghan.
 The command has its own scripting language called AWK.&lt;/p&gt;
@@ -248,17 +261,4 @@ It can be used to provide context for humans reading the script.&lt;/p&gt;</desc
 &lt;p&gt;It&amp;rsquo;s a Christmas calendar focusing on bash scripting.
 Each day has a tip on bash scripting.&lt;/p&gt;
 &lt;p&gt;In just 24 days you will learn to make fancy scripts to automate all sorts of
-things.&lt;/p&gt;</description></item><item><title>inotify, wait what?</title><link>https://rpede.github.io/xmas-bashing/blog/20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/20/</guid><description>&lt;p&gt;Inotify is short for index node notify.
-An index node (short inode) is a filesystem object (files and folder) in
-Unix-style operating systems such as Linux.
-The terminology is a bit crazy.&lt;/p&gt;
-&lt;p&gt;Anyway, inotify is an API that allows programs to monitor for changes to files
-or folders.&lt;/p&gt;
-&lt;h2 id="install"&gt;Install&lt;/h2&gt;
-&lt;p&gt;To use it from the shell, we first need to install inotify-tools.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Debian&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install inotify-tools
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Arch Linux&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo pacman -S inotify-tools
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="usage"&gt;Usage&lt;/h2&gt;
-&lt;p&gt;A simple usage is to wait for changes to a file.&lt;/p&gt;</description></item></channel></rss>
+things.&lt;/p&gt;</description></item></channel></rss>
