@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/blog/</link><description>Recent content in Blogs on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 20 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>inotify, wait what?</title><link>https://rpede.github.io/xmas-bashing/blog/20/</link><pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/20/</guid><description>&lt;p&gt;Inotify is short for index node notify.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/blog/</link><description>Recent content in Blogs on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 21 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Drowning in notifications</title><link>https://rpede.github.io/xmas-bashing/blog/21/</link><pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/21/</guid><description>&lt;p&gt;Most desktop environments (KDE, GNOME, Xfce etc) support notifications.
+Implementations are based on &lt;a href="https://specifications.freedesktop.org/notification/latest-single/"&gt;Desktop Notifications
+Specification&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are using a stand-alone window manager (like Hyprland or Sway) instead
+of a desktop environment, you can still use notifications.
+You just need a notification daemon such as
+&lt;a href="https://dunst-project.org/showcase/"&gt;Dunst&lt;/a&gt;,
+&lt;a href="https://codeberg.org/dnkl/fnott"&gt;Fnott&lt;/a&gt;,
+&lt;a href="https://github.com/ErikReider/SwayNotificationCenter"&gt;SwayNotificationCenter&lt;/a&gt;
+etc.
+You might already have one installed and running.&lt;/p&gt;
+&lt;p&gt;automation tasks.
+It could be: backing up files with &lt;a href="https://rsync.samba.org/"&gt;rsync&lt;/a&gt; or
+&lt;a href="https://www.man7.org/linux/man-pages/man1/scp.1.html"&gt;scp&lt;/a&gt;, transcoding media
+with &lt;a href="https://ffmpeg.org/"&gt;FFmpeg&lt;/a&gt;, or bulk resizing images with
+&lt;a href="https://imagemagick.org/"&gt;ImageMagick&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>inotify, wait what?</title><link>https://rpede.github.io/xmas-bashing/blog/20/</link><pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/20/</guid><description>&lt;p&gt;Inotify is short for index node notify.
 An index node (short inode) is a filesystem object (files and folder) in
 Unix-style operating systems such as Linux.
 The terminology is a bit crazy.&lt;/p&gt;
