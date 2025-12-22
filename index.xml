@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 21 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>Drowning in notifications</title><link>https://rpede.github.io/xmas-bashing/blog/21/</link><pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/21/</guid><description>&lt;p&gt;Most desktop environments (KDE, GNOME, Xfce etc) support notifications.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>Kick ass and chew gum</title><link>https://rpede.github.io/xmas-bashing/blog/22/</link><pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/22/</guid><description>&lt;p&gt;It&amp;rsquo;s time to &lt;a href="https://www.youtube.com/watch?v=s1TcnQxV4BE"&gt;kick ass and chew gum&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/charmbracelet/gum"&gt;Gum&lt;/a&gt; by &lt;a href="https://charm.land/"&gt;charm_&lt;/a&gt; is
+a set of utilities for making &amp;ldquo;glamorous&amp;rdquo; shell scripts.&lt;/p&gt;
+&lt;h2 id="install"&gt;Install&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Arch Linux&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pacman -Sy gum
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Other Linux&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you can&amp;rsquo;t find it in your distributions package manager, then try installing
+it with &lt;a href="https://brew.sh/"&gt;Homebrew&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install gum
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Works on macOS too.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="usage"&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Gum contains utilities for different tasks.
+They are mostly centered around interactivity in CLI.&lt;/p&gt;
+&lt;h3 id="pager"&gt;Pager&lt;/h3&gt;
+&lt;p&gt;A pager allows you to scroll around in a large amount of text.&lt;/p&gt;</description></item><item><title>Drowning in notifications</title><link>https://rpede.github.io/xmas-bashing/blog/21/</link><pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/21/</guid><description>&lt;p&gt;Most desktop environments (KDE, GNOME, Xfce etc) support notifications.
 Implementations are based on &lt;a href="https://specifications.freedesktop.org/notification/latest-single/"&gt;Desktop Notifications
 Specification&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you are using a stand-alone window manager (like Hyprland or Sway) instead
