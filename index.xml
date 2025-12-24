@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>Process substitution</title><link>https://rpede.github.io/xmas-bashing/blog/23/</link><pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/23/</guid><description>&lt;p&gt;Process substitution is another way to chain together input/output of various
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xmas Bashing</title><link>https://rpede.github.io/xmas-bashing/</link><description>Recent content on Xmas Bashing</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 24 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rpede.github.io/xmas-bashing/index.xml" rel="self" type="application/rss+xml"/><item><title>nushell</title><link>https://rpede.github.io/xmas-bashing/blog/24/</link><pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/24/</guid><description>&lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;You&amp;#39;ve mastered bash.
+You are piping from one command to another effortless.
+You use `cut`, `tr`, `sed`, `awk`, `grep` etc to transform data from one
+command to the next.
+You are starting to wonder.
+What if you didn&amp;#39;t have to transform data?
+What if the data had a little more structure?
+What if commands understood each other?
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Presenting &lt;a href="https://www.nushell.sh/"&gt;nushell&lt;/a&gt;.
+It is a reimagining of a shell, that works with structured data.&lt;/p&gt;</description></item><item><title>Process substitution</title><link>https://rpede.github.io/xmas-bashing/blog/23/</link><pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate><guid>https://rpede.github.io/xmas-bashing/blog/23/</guid><description>&lt;p&gt;Process substitution is another way to chain together input/output of various
 commands.
 It might sound similar to pipe (&lt;code&gt;|&lt;/code&gt;) but there is a key difference.&lt;/p&gt;
 &lt;p&gt;Before I go more in depth on how it works, let me first provide you with an
